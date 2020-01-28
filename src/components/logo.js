@@ -26,11 +26,11 @@ class Logo extends Component {
         
         var geo = new THREE.EdgesGeometry( boxGeo);
 
-        var mat = new THREE.LineBasicMaterial( { color: "#141414", linewidth:30 });
+        var mat = new THREE.LineBasicMaterial( { color: "#000000", linewidth:30 });
         var wireframe = new THREE.LineSegments( geo, mat );
 
         var sphereGeo = new THREE.SphereGeometry(2,50,50);
-        var sphereMat = new THREE.MeshBasicMaterial({color: "#1CADB6"});
+        var sphereMat = new THREE.MeshBasicMaterial({color: "#90ee90"});
         var sphere = new THREE.Mesh(sphereGeo,sphereMat);
 
         scene.add( wireframe );
